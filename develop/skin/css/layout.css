@@ -1,0 +1,139 @@
+body{background:#f3f3f3; margin:0; padding:0; font: 14px/1.4 arial; font-family:'微软雅黑', "Helvetica Neue","sans-serif" !important;}
+a{text-decoration:none; color:#4a4a4a; outline:none; -webkit-touch-callout:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:hover, a:focus {color:inherit; text-decoration: none;}
+img{display:block; width:100%;}
+ul,li{list-style: none; margin:0; padding:0;}
+ul{-webkit-margin-before:0;-webkit-padding-start: 0px;}
+i,b{font-style:normal; font-weight:normal;}
+.strong{font-weight:bold;}
+p{margin:0;}
+
+
+/* 顶部 */
+.header{height:45px; line-height:45px; background:#9f2122; border-bottom:solid 1px #8a1717; text-align:center;}
+    .header a{color:#fff; line-height:40px; font-size:1.3rem;}
+    .header input{margin-top:7px;}
+    .header i{font-family:iconfont; font-size:1.6rem;}
+
+
+/* 底部样式 */
+.footer{height:55px; background:#fff; border-top:solid 1px #eee; text-align:center;}
+    .footer a{font-size:0.8rem; line-height:25px; font-size: 1.3rem;}
+    .footer i{font-family:iconfont; display:block; font-size:2.6rem; margin-top:5px;}
+    /*.footer .glyphicon{font-size:1.8rem; padding-top:10px;}*/
+    .footer .active a{color:#b20}
+
+.box{margin-top:45px; margin-bottom:60px;}
+
+/*=========================================================================
+ 首页
+=========================================================================*/
+/* 首页轮播图 */
+.bar{height:auto;}
+    .bar img{width:100%;}
+
+/* 按钮导航 */
+.menu{text-align:center; padding:0 22px; background:#fff; border-bottom:solid 1px #eee; margin-bottom:6px;}
+    .menu a{font-size:1.0rem; margin:12px 0 6px 0; background:#eee; display:block; color:#fff;}
+    .menu .row .col-xs-3:nth-child(1) a{background:#add597;}
+    .menu .row .col-xs-3:nth-child(2) a{background:#f7b47f;}
+    .menu .row .col-xs-3:nth-child(3) a{background:#7ecdf4;}
+    .menu .row .col-xs-3:nth-child(4) a{background:#f29c9f;}
+
+    .menu p{padding-bottom:5px;}
+    .menu .col-xs-3{padding:0 7px;}
+        .menu i{font-family:iconfont;  font-size:2.1rem; padding-top:10px;}
+
+/* 首页广告 */
+.ad{padding:0 5px;}
+    .ad .row{margin:0}
+    .ad .col-xs-6{padding:3px 3px}
+
+/* tab菜单 */
+.tab{margin-top:10px; border-top:solid 1px #ddd; text-align:center;}
+    .tab .nav-tabs{border-bottom:0; }
+    .tab li{width:33.3%;}
+    .tab li a{border-right:solid 1px #ddd; margin:0; border-bottom:solid 1px #ddd;}
+    .tab li.active a{border-radius:0; border-top:0; border-bottom:solid 1px #fff;}
+        .tab li.active a:hover{border-top:0;}
+
+/* tab列表 */
+.recommend{padding:15px 5px 0; background:#fff;}
+    .product{margin:0px; list-style: none; -webkit-margin-before:0;-webkit-padding-start: 0px;}
+    .product li{padding:0 5px;}
+        .product li a{margin-bottom:10px;}
+        .product li .caption{padding:0;}
+
+    /* 价格 */
+    .product p.price{color:#f00;}
+
+/* 标题title */
+.sub-title{height:40px; background:#fff; border-bottom:1px solid #eee; border-top:1px solid #e3e3e3;}
+    .sub-title i{font-family:iconfont; display:block; float:left; color:#e60; font-size:1.8rem; margin-right:8px;}
+
+    /* 类别列表 */
+    .category{padding:15px 5px 0; background:#fff;}
+        .list{margin:0px; list-style: none; -webkit-margin-before:0;-webkit-padding-start: 0px;}
+            .list .col-xs-6{padding:0 5px;}
+            .list li .media{border:1px dotted #e3e3e3;}
+                .list li .media-body h4{font-size: 0.9rem; margin: 8px 0 6px 1px; color: #666;}
+                .list li .media-body p{font-size: 0.7rem; color: #aaa; line-height: 15px; margin-left: 1px;}
+            .list li a{width:44%;}
+                .list li a img{width:100%;}
+
+
+/*===================================================================
+ * 商品类别页面
+===================================================================*/
+/* 大类别列表 */
+.clist{margin:0px; background:#fff;}
+    .clist ul{padding:5px 1%; overflow:hidden;}
+    .clist li{padding:0 5px;text-align:center;}
+        .clist li a{display:block; padding:8px 0; background:#efefef; color:#3e3e3e; margin:5px 0; }
+        .clist li a.active{background:#13b15b; color:#fff;}
+
+/* 大类别下小类别列表 */
+.plist{background:#fff; margin:10px 0;}
+    .plist ul{padding:0 1%;}
+        .plist li{padding:0 5px;}
+            .plist li a{margin-bottom: 10px; border:1px dotted #ddd;}
+            .plist li a p{margin:8px 0 3px; text-align: center;}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 用户中心 */
+/*------------------------------------------------------------------------------------------*/
+/* 用户中心 */
+#bar{background:#b14344; height:100px; line-height:100px; text-align:center; border-bottom:solid 1px #a12424;}
+    #bar img{width:65%; display: inline;}
+
+/* 信息 tab */
+i.icon{font-family:iconfont;}
+    .right span{color:#afafaf; font-size:1.6rem; margin-right:10px;}
+    .right i{font-family:iconfont; font-size:1.8rem; color:#afafaf;}
+
+/* 分销中心 */
+.table tbody tr td{border-top:0; vertical-align: middle;}
+
+
+/* 收货地址 */
+.on{background-color: #fdfedf; border-top:1px dotted #e35525; border-bottom:1px dotted #e35525;}
+
+
+
+/* iconfont */
+@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont" !important; font-size:1.1rem; font-style:normal; -webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale;}
+.display{display:block;}
+.overflow{overflow:hidden;}
+
+.box-sizing{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;}

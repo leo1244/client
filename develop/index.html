@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app='myApp'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="skin/css/bootstrap.css">
+    <link rel="stylesheet" href="skin/css/common.css">
+    <link rel="stylesheet" href="skin/css/layout.css">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+</head>
+<body>
+
+<div class="container-fluid navbar-fixed-top header">
+    <div class="row">
+        <div class="col-xs-2 p-lr-5"><a href="#">商圈名<i>&#xe62e;</i></a></div>
+        <div class="col-xs-8 p-lr-5"><input type="text" class="form-control input-sm" placeholder="Search"></div>
+        <div class="col-xs-2 p-lr-5"><a href="#"><i>&#xe624;</i></a></div>
+    </div>
+</div>
+
+<div class="navbar-fixed-bottom footer">
+    <div class="row m-0">
+        <div class="col-xs-3 p-0 active"><a ui-sref='home/index' href="#"><i>&#xe62a;</i>首页</a></div>
+        <div class="col-xs-3 p-0"><a ui-sref='product/category' href="#"><i>&#xe62b;</i>分类</a></div>
+        <div class="col-xs-3 p-0"><a ui-sref='user/home' href="#"><i>&#xe616;</i>我的</a></div>
+        <div class="col-xs-3 p-0"><a href="#"><i>&#xe62f;</i>购物车</a></div>
+    </div>
+</div>
+
+<div ui-view></div>
+    <script type="text/javascript" src='js/boot.js'></script>
+    <script type="text/javascript" src='js/router.js'></script>
+</div>
+</body>
+</html>
