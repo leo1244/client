@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>选择礼品</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<meta name='apple-mobile-web-app-capable' content='yes'>
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name='format-detection' content='telephone=no'>
+	<meta name='format-detection' content='email=no'>
+	<script src='js/jquery-1.9.1.min.js'></script>
+	<link rel="stylesheet" href="skin/bootstrap.min.css">
+	<link rel='stylesheet' type='text/css' href='skin/app.css'>
+	<link rel='stylesheet' type='text/css' href='skin/style.css'>
+</head>
+<body>
+<header>
+	<div>
+		<img src='skin/image/logo.jpg'>
+		<select class="form-control option">
+            <option>A套餐-全日均衡营养</option>
+            <option>B套餐-全日均衡营养</option>
+			<option>C套餐-全日均衡营养</option>
+			<option>D套餐-全日均衡营养</option>
+        </select>
+	</div>
+	<b>和社区感谢您体验,我们精选当日您所需,只为口碑相传</b>
+</header>
+<ul class='choose'>
+	<li>
+		<img src='skin/image/pic.jpg'>
+		<div class='mark'>
+			<h4>精品西红柿</h4>
+			<em>入口甜爽</em>
+			<b>库存量仅余25份</b>
+		</div>
+		<div class='price'>
+			<i>4.80</i>元<br>0.8-1.0斤/份
+		</div>
+		<label class="i-switch pull-right">
+			<input id='check' type="checkbox">
+			<i></i>
+		</label>
+	</li>
+
+</ul>
+<script>
+$(function()
+{
+	if($("#check")[0].checked == false)
+	{
+		$(".choose").addClass('uncheck');
+
+		$(".mark b").css("color","#616161");
+		$(".price i").css("color","#616161")
+		$("ul.choose li img").addClass('gray');
+	}
+	
+	$('#check').change(function(){
+		if($("#check")[0].checked == false)
+		{
+			$(".choose").addClass('uncheck');
+	
+			$(".mark b").css("color","#616161");
+			$(".price i").css("color","#616161")
+			$("ul.choose li img").addClass('gray');
+		}
+		if($("#check")[0].checked == true)
+		{
+			$(".choose").removeClass('uncheck');
+		
+			$(".mark b").css("color","#e10423");
+			$(".price i").css("color","#e10423")
+			$("ul.choose li img").removeClass('gray');
+		}	
+	});
+})
+</script>
+<div class='count'>
+	<div class='left'><i>?</i><a href=''>关于购物券</a></div>
+	<div class='left'><i>?</i><a href=''>关于体验单</a></div>
+	<span>合计：￥<b>23.6</b>元(不含未选)</span>
+</div>
+<div class='desc'>
+	<h5>体验单,全部返回“等值购物券”<br>下多少返多少,只返一次呦！</h5>
+	当前体验单您可获返<em>24元</em>等值购物券！
+	<b>返的太少?那就继续加够您想要的商品吧！</b>
+</div>
+
+<footer>
+	<a href=''><img src='skin/image/add.png'></a>
+	<a href=''><img src='skin/image/now.png'></a>
+</footer>
+</body>
+</html>
