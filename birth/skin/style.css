@@ -2,39 +2,29 @@
 
 *{margin:0; padding:0;}
 html{height:100%}
-body{height:100%; font:14px/1.4 arial; color:#4a4a4a; font-family:"Helvetica Neue","sans-serif" !important; background:#fff;}
+body{height:100%; font:12px/1.4 arial; color:#4a4a4a; font-family:'微软雅黑', "Helvetica Neue","sans-serif" !important; background:#fff;}
 a,button,input{-webkit-touch-callout:none; outline:none;}
 a{text-decoration:none; color:#333333;}
-ul,li{list-style:none}
+ul,li{list-style:none; margin:0;}
 img{display:block;}
 i,em{font-style:normal;}
 
 #box{min-width: 320px; max-width:640px; margin:0 auto;}
 
-
-
 /* 收集信息 */
-
-/* 下拉框 */
-.select{border-radius:2px; -webkit-box-shadow:none; width: 100%; height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; border: 1px solid #ddd;}
-
-/* 输入框 */
-#single{background:#fff; margin:0 auto; border-top:1px dashed #ddd; border-bottom:1px dashed #ddd; padding:0 5% 4%;}
-	#single li{border-bottom:1px dashed #ddd; padding:3% 0;}
-	#single li input{border:none; padding:5px; width:100%; margin:0 auto; height:24px; font-size:14px;}
-	
-/* 文字信息 */
-.info{padding:15px 5%; line-height:2em;}
-
-/* 按钮 */
-.button{padding:15px 5%; text-align:center; border-top:1px dashed #ddd; border-bottom:1px dashed #ddd;}
-	.button a{color:#fff; background-color:#27c24c; border-color:#27c24c; border-radius:2px; padding:8px 15px;}
-
-
-
-
-
-
+.main{width:100%; margin:0 auto; padding: 5%;}
+	.main h1{font-size:18px; line-height:28px; color:#ffff00; text-align:center; margin-top:10px;}
+	.form{padding:0 8% ; margin:10px 0;}
+		.form select{background-color: #fff; width: 100%; border-radius: 10px; margin:10px 0; box-shadow:none; border-color:#fff;}
+		.form select option{width: 100%;}
+		.form-group input.form-control{margin:10px 0; border-radius:10px;}
+	.pic1 img{ width:100%;}
+	.main p{ color: #fff; text-align: center; font-size: 13px; margin: 15px 0 20px 0 ;}
+	.pic2 img{width:100%}
+	.main p.p2{font-size: 16px; margin: 25px  0; font-weight: bold;}
+	.addabout{float: right; font-size:12px; margin: 10px 0;}
+		.addabout img{float:left;}
+		.addabout span{float: left; padding: 5px 0 0 0; display: block; line-height: 10px;}
 
 /*---------------------------------------------------------------------*/
 /* 积周,满月活动 */
@@ -43,22 +33,27 @@ i,em{font-style:normal;}
 	#banner img{width:100%;}
 
 #main{background:#ffde73; padding:0 10% 20px; background:url(image/btm.jpg) bottom center no-repeat #ffde73; background-size:100%;}
-	.act{width:100%;}
+	.act{width:80%; padding:0 10% 0; background:#ffde73;}
 
-/* 动态进度条  */
-@-webkit-keyframes progress-bar-stripes {
-  from {background-position: 40px 0;}
-  to {background-position: 0 0;}
-}
-@keyframes progress-bar-stripes {
-  from {background-position: 40px 0;}
-  to {background-position: 0 0;}
-}
-.progress{height:20px; margin-bottom: 20px; overflow: hidden; background-color: #f5f5f5; border-radius: 4px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);}
-.progress-bar{width:0; height: 100%; font-size: 12px; line-height: 20px; color: #fff; text-align: center; background-color: #337ab7; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); -webkit-transition: width .6s ease; -o-transition: width .6s ease; transition: width .6s ease; -webkit-animation: progress-bar-stripes 2s linear infinite; animation: progress-bar-stripes 2s linear infinite; background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); background-image:-o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); background-image:linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); -webkit-background-size: 40px 40px; background-size: 40px 40px;}
-.progress-bar-info {background-color: #5bc0de;}
+/* 周 分段 */
+.month{height:auto; overflow:hidden; padding:10px 0 5px; background:#ffde73; }
+	.month ul{padding:0 10%;}
+	.month li{width:25%; float:left; text-align:center; color:#a18d48;}
 
+/* 开始时间 */
+.activity{padding:0 3%; overflow:hidden; background:#ffde73; padding-bottom:10px;}
+	.activity .left{float:left; width:10%; text-align:center; color:#cf2f47; line-height:12px;}
 
+	.middle{float:left; width:80%;}
+		.progress{height:24px; overflow: hidden; background-color:#f5f5f5; border-radius:12px;}
+			.progress-bar{width:0; float:left; height:100%; font-size:12px; line-height:24px; color:#fff; text-align:center; background-color:#d62f41;}
+			.progress-bar-info{background-color:#ffefbb;}
+
+	.activity .right{float:right; width:10%; text-align:center; color:#cf2f47; line-height:12px;}
+
+.data{padding:0 13%; background:#ffde73; height:28px; line-height:28px; padding-bottom:10px; color:#41433e; font-size:14px;}
+	.data b{color:#d92e40; margin-left:15px; font-weight:normal;}
+	
 /* 参加人员 */
 .join{background:#ffefbb; border-radius:8px; padding:10px 5%; height:auto; overflow:hidden;}
 	.join li{height:28px; line-height:28px;}
@@ -73,16 +68,74 @@ i,em{font-style:normal;}
 
 /* 活动规则 */
 #rule{padding:10px 8%;}
-	#rule h3{text-align:center; color:#D52F41;}
+	#rule h3{text-align:center; color:#D52F41; font-size:20px; font-weight:normal;}
 	#rule li{width:100%; height:auto; line-height:28px; overflow:hidden;}
 		#rule li i{background:#f60; display:block; margin:4px 10px 4px 0; float:left; width:20px; height:20px; line-height:20px; border-radius:10px; text-align:center; color:#fff;}
 		
-	#rule h2{color:#D52F41; font-size:18px; text-align:center; margin-top:10px;}
-
+	#rule h2{color:#D52F41; font-size:16px; text-align:center; margin-top:10px; font-weight:normal;}
+	#rule em{color:#D52F41;}
 	
 /* 底部 */
 .btm{width:100%;}
 
+/*---------------------------------------------------------------------*/
+/* 活动 */
+/*---------------------------------------------------------------------*/
+.body{background:url(image/bg.jpg); -moz-background-size:cover; -ms-background-size:cover; -webkit-background-size:cover; background-size:100% 135%;}
+
+.birth{padding:10%;}
+   .birth .pic{width:100%; margin-bottom:10px;}
+   .birth .m10{margin-top:10%;}
+
+   /* 商品列表 */
+   .birth ul.list{width:100%; margin: 20px 0;}
+      .birth ul.list li{float:left; width:50%; margin-top:4%; overflow:hidden; position: relative;}
+         .birth ul.list li img{width:94%; padding:0 3%;}
+         .list li img.pos{width:94%; display:block; position:absolute; left:0; top:0; display: none;}
+
+/* 体验单 */
+header{width:100%; padding:10px 0; background:#da0000; position:fixed; top:0; z-index:20;}
+	header div{padding:0 5%; height:34px; overflow:hidden;}
+		header div img{float:left; width:30%; margin-top:6px;}
+		header select.option{float:right; width:60%;}
+		
+	header b{display:block; text-align:center; font-weight:normal; color:#fff; font-size:13px; margin-top:10px;}
+
+
+ul.choose{padding:85px 0 0;}
+	ul.choose li{padding:10px 5%; border-bottom:1px solid #d1d1d1; overflow:hidden; position:relative;}
+	ul.choose li img{float:left; width:20%;}
+	ul.choose li img.gray {-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
+	
+	
+
+	.choose .mark{width:35%; float:left; margin-left:3%; padding:0; background:none;}
+		.mark h4{font-size:16px; font-weight:normal; margin:5px 0; color:#616161;}
+		.mark em{display:block; color:#868686;}
+		.mark b{display:block; position:absolute; bottom:8%; font-weight:normal; color:#e10423;}
+	
+	.choose .price{float:left;  font-size:12px; padding-top:4%;}
+		.price i{color:#e10423; font-size:18px;}
+	
+	
+	.count{background:#ececec; height:40px; line-height:40px; padding:0 3%; color:#999999; overflow:hidden;}
+		.count .left{float:left; margin-right:10px;}
+		.count span{float:right; color:#5c5c5c;}
+			.count span b{font-weight:normal; color:#e10423; font-size:18px;}
+		.count i{background:#cecece; width:16px; height:16px; border-radius:8px; margin:12px 3px 0 0; display:block; float:left; text-align:center; line-height:16px;}
+		.count a{color:#999;}
+
+	/* 底部介绍 */
+	.desc{text-align:center; font-size:14px; line-height:2em; padding:15px 0 16%;}
+		.desc h5{color:#e10423; font-size:20px; line-height:1.5em; margin-bottom:10px;}
+		.desc em{color:#e10423; font-size:18px; margin:0 5px;}
+		.desc b{display:block; color:#e10423; font-weight:normal;}
+
+footer{width:100%; padding:10px 0; background:#da0000; position:fixed; bottom:0; z-index:20;}
+	footer a{display:block; float:left; text-align:center; width:50%;}
+		footer a img{width:80%; display:inline;}
+	
+		
 
 
 @font-face {font-family: "iconfont";
